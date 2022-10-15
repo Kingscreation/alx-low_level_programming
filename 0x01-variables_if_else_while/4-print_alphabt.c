@@ -1,18 +1,20 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
 /**
  * main - Entry point
  * Return: Always 0
  */
 int main(void)
 {
-	char low;
+	char ch = 'a';
 
-	for (low = 'a'; low <= 'z'; low++)
-		if (low == 'q' || low == 'e')
-			continue;
-			putchar(low);
+	while (ch <= 'z')
+	{
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+		ch++;
+	}
 	putchar('\n');
 
 	return (0);

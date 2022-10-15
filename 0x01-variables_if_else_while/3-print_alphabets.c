@@ -6,7 +6,7 @@
  * main - Entry point
  * Return: Always 0
  */
-int main(0)
+int main(void)
 {
 	char low;
 

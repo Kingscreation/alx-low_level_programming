@@ -5,21 +5,32 @@
  */
 int main(void)
 {
-	int a, b, c;
+int m, i, j;
 
-	for (a = 0; a < 8; a++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (c = b + 1; c < 10; c++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			putchar((a % 10) + '0');
-		putchar((b % 10) + '0');
-		putchar((c % 10) + '0');
-		if (a == 7 && b == 8 && c == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
+			for (m = '0'; m <= '9'; m++)
+			{
+				if (i < j && j < m)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(m);
+					if (i == '7' && j == '8' && m == '9')
+					{
+						break
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
 	}
-}
-return (0);
+	putchar ('\n');
+	return (0);
 }
