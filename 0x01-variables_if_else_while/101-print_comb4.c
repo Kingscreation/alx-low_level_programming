@@ -5,32 +5,28 @@
  */
 int main(void)
 {
-int m, i, j;
+	int a, b, c;
 
-	for (i = '0'; i <= '9'; i++)
-	{
-		for (j = '0'; j <= '9'; j++)
+	for (a = 48; a < 58; a++)
+	{	
+		for (b = 49; b < 58; b++)
 		{
-			for (m = '0'; m <= '9'; m++)
+			for (c = 50; c < 58; c++)
 			{
-				if (i < j && j < m)
+				if (c > b && b > a)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(m);
-					if (i == '7' && j == '8' && m == '9')
+					putchar(a);
+					putchar(b);
+					putchar(c);				  		      if (a != 55 || b !=56)
 					{
-						break
-					}
-					else
-					{
-						putchar(',');
+						putchar(',')
 						putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
+
