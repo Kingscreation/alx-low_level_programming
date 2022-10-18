@@ -14,7 +14,7 @@ int main(void)
 	{
 		_putchar(myVar[i]);
 		i++;
-	}	
+	}
 	_putchar('\n');
 
 	return (0);
